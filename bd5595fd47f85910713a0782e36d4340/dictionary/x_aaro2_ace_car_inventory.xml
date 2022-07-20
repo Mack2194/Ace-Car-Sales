@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Inventory" max_length="40" name="x_aaro2_ace_car_inventory" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Availability" mandatory="true" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Available" sequence="0" value="available"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Sold" sequence="1" value="sold"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Model" mandatory="true" max_length="40" name="u_choice_2" type="string" use_dependent_field="true">
+            <choice>
+                <element inactive_on_update="false" label="Camaro 2SS Coupe" sequence="0" value="camaro 2ss coupe"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="CORVETTE STINGRAY 3LT TARGA" sequence="1" value="corvette stingray 3lt targa"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="MUSTANG MACH 1 COUPE" sequence="2" value="mustang mach 1 coupe"/>
+                <element inactive_on_update="false" label="F-150 XLT 4WD SUPERCREW PICK-UP" sequence="3" value="f-150 xlt 4wd supercrew pick-up"/>
+                <element inactive_on_update="false" label="M8 COMPETITION COUPE" sequence="4" value="m8 competition coupe"/>
+                <element inactive_on_update="false" label="I8 MEGA WORLD HYBRID COUPE" sequence="5" value="i8 mega world hybrid coupe"/>
+                <element inactive_on_update="false" label="R8 PERFORMANCE COUPE" sequence="6" value="r8 performance coupe"/>
+                <element inactive_on_update="false" label="A6 DESIGN SEDAN" sequence="7" value="a6 design sedan"/>
+                <element inactive_on_update="false" label="CHALLENGER SCAT PACK COUPE" sequence="8" value="challenger scat pack coupe"/>
+                <element inactive_on_update="false" label="CHARGER RT SCAT PACK SEDAN" sequence="9" value="charger rt scat pack sedan"/>
+                <element inactive_on_update="false" label="Q70 PREMIUM SEDAN" sequence="10" value="q70 premium sedan"/>
+                <element inactive_on_update="false" label="Q60 PREMIUM COUPE" sequence="11" value="q60 premium coupe"/>
+                <element inactive_on_update="false" label="AMG GT C COUPE" sequence="12" value="amg gt c coupe"/>
+                <element inactive_on_update="false" label="CLS-CLASS AMG 63 SEDAN" sequence="13" value="cls-class amg 63 sedan"/>
+                <element inactive_on_update="false" label="TAYCAN 4S SEDAN" sequence="14" value="taycan 4s sedan"/>
+                <element inactive_on_update="false" label="CAYMAN S COUPE" sequence="15" value="cayman s coupe"/>
+                <element inactive_on_update="false" label="GT-R PREMIUM COUPE" sequence="16" value="gt-r premium coupe"/>
+                <element inactive_on_update="false" label="370Z COUPE" sequence="17" value="370z coupe"/>
+                <element inactive_on_update="false" label="CAMRY XSE SEDAN" sequence="18" value="camry xse sedan"/>
+                <element inactive_on_update="false" label="CAMRY PREMIUM SEDAN" sequence="19" value="camry premium sedan"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Make" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Chevrolet" sequence="0" value="chevrolet"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Ford" sequence="1" value="ford"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Dodge" sequence="2" value="dodge"/>
+                <element inactive_on_update="false" label="BMW" sequence="3" value="bmw"/>
+                <element inactive_on_update="false" label="Mercedes-Benz" sequence="4" value="mercedes-benz"/>
+                <element inactive_on_update="false" label="Audi" sequence="5" value="audi"/>
+                <element inactive_on_update="false" label="Toyota" sequence="6" value="toyota"/>
+                <element inactive_on_update="false" label="Infiniti" sequence="7" value="infiniti"/>
+                <element inactive_on_update="false" label="Nissan" sequence="8" value="nissan"/>
+                <element inactive_on_update="false" label="Porsche" sequence="9" value="porsche"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Year" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="2010" sequence="0" value="2010"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="2011" sequence="1" value="2011"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="2012" sequence="2" value="2012"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="2013" sequence="3" value="2013"/>
+                <element inactive_on_update="false" label="2014" sequence="4" value="2014"/>
+                <element inactive_on_update="false" label="2015" sequence="5" value="2015"/>
+                <element inactive_on_update="false" label="2016" sequence="6" value="2016"/>
+                <element inactive_on_update="false" label="2017" sequence="7" value="2017"/>
+                <element inactive_on_update="false" label="2018" sequence="8" value="2018"/>
+                <element inactive_on_update="false" label="2019" sequence="9" value="2019"/>
+                <element inactive_on_update="false" label="2020" sequence="10" value="2020"/>
+                <element inactive_on_update="false" label="2021" sequence="11" value="2021"/>
+                <element inactive_on_update="false" label="2022" sequence="12" value="2022"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Condition" mandatory="true" max_length="40" name="u_choice_6" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Used" sequence="1" value="used"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Color" mandatory="true" max_length="40" name="u_choice_7" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Red" sequence="0" value="red"/>
+                <element inactive_on_update="false" label="Black" sequence="1" value="black"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Blue" sequence="2" value="blue"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Orange" sequence="3" value="orange"/>
+                <element inactive_on_update="false" label="Yellow" sequence="4" value="yellow"/>
+                <element inactive_on_update="false" label="Purple" sequence="5" value="purple"/>
+                <element inactive_on_update="false" label="Green" sequence="6" value="green"/>
+                <element inactive_on_update="false" label="Matte Black" sequence="7" value="matte black"/>
+                <element inactive_on_update="false" label="Grey" sequence="8" value="grey"/>
+                <element inactive_on_update="false" label="White" sequence="9" value="white"/>
+            </choice>
+        </element>
+        <element label="Price" mandatory="true" max_length="40" name="u_integer_8" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Short description" max_length="40" name="u_string_5" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>xxsmack</sys_created_by>
+        <sys_created_on>2022-07-20 16:03:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>696e1931477c5910713a0782e36d43fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_aaro2_ace_car_inventory.x_aaro2_ace_car.user</sys_name>
+        <sys_package display_value="Ace Car Sales" source="x_aaro2_ace_car">bd5595fd47f85910713a0782e36d4340</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ace Car Sales">bd5595fd47f85910713a0782e36d4340</sys_scope>
+        <sys_security_acl display_value="x_aaro2_ace_car_inventory">616e1931477c5910713a0782e36d43f8</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_696e1931477c5910713a0782e36d43fd</sys_update_name>
+        <sys_updated_by>xxsmack</sys_updated_by>
+        <sys_updated_on>2022-07-20 16:03:08</sys_updated_on>
+        <sys_user_role display_value="x_aaro2_ace_car.user" name="x_aaro2_ace_car.user">075611b1473c5910713a0782e36d4323</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>
