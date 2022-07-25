@@ -1,21 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Inventory" max_length="40" name="x_aaro2_ace_car_inventory" type="collection">
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Availability" mandatory="true" max_length="40" name="u_choice_1" type="string">
+    <element label="Inventory" max_length="40" name="x_aaro2_ace_car_inventory" sizeclass="2" type="collection">
+        <element choice="1" label="Availability" mandatory="true" max_length="40" name="availability" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Available" sequence="0" value="available"/>
-                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
-                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
                 <element inactive_on_update="false" label="Sold" sequence="1" value="sold"/>
-                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Model" mandatory="true" max_length="40" name="u_choice_2" type="string" use_dependent_field="true">
+        <element choice="1" label="Color" mandatory="true" max_length="40" name="color" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Camaro 2SS Coupe" sequence="0" value="camaro 2ss coupe"/>
-                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
-                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Red" sequence="0" value="red"/>
+                <element inactive_on_update="false" label="Black" sequence="1" value="black"/>
+                <element inactive_on_update="false" label="Blue" sequence="2" value="blue"/>
+                <element inactive_on_update="false" label="Orange" sequence="3" value="orange"/>
+                <element inactive_on_update="false" label="Yellow" sequence="4" value="yellow"/>
+                <element inactive_on_update="false" label="Purple" sequence="5" value="purple"/>
+                <element inactive_on_update="false" label="Green" sequence="6" value="green"/>
+                <element inactive_on_update="false" label="Matte Black" sequence="7" value="matte black"/>
+                <element inactive_on_update="false" label="Grey" sequence="8" value="grey"/>
+                <element inactive_on_update="false" label="White" sequence="9" value="white"/>
+            </choice>
+        </element>
+        <element choice="1" label="Condition" mandatory="true" max_length="40" name="condition" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Used" sequence="1" value="used"/>
+            </choice>
+        </element>
+        <element choice="3" default="none" label="Make" mandatory="true" max_length="40" name="make" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="None" sequence="0" value="none"/>
+                <element inactive_on_update="false" label="Chevrolet" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Ford" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="Dodge" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="BMW" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="Mercedes-Benz" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="Audi" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="Toyota" sequence="7" value="7"/>
+                <element inactive_on_update="false" label="Infiniti" sequence="8" value="8"/>
+                <element inactive_on_update="false" label="Nissan" sequence="9" value="9"/>
+                <element inactive_on_update="false" label="Porsche" sequence="10" value="10"/>
+            </choice>
+        </element>
+        <element choice="1" label="Model" mandatory="true" max_length="40" name="model" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="CAMARO 2SS COUPE" sequence="0" value="camaro 2ss coupe"/>
                 <element inactive_on_update="false" label="CORVETTE STINGRAY 3LT TARGA" sequence="1" value="corvette stingray 3lt targa"/>
-                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
                 <element inactive_on_update="false" label="MUSTANG MACH 1 COUPE" sequence="2" value="mustang mach 1 coupe"/>
                 <element inactive_on_update="false" label="F-150 XLT 4WD SUPERCREW PICK-UP" sequence="3" value="f-150 xlt 4wd supercrew pick-up"/>
                 <element inactive_on_update="false" label="M8 COMPETITION COUPE" sequence="4" value="m8 competition coupe"/>
@@ -36,31 +65,13 @@
                 <element inactive_on_update="false" label="CAMRY PREMIUM SEDAN" sequence="19" value="camry premium sedan"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Make" mandatory="true" max_length="40" name="u_choice_3" type="string">
-            <choice>
-                <element inactive_on_update="false" label="Chevrolet" sequence="0" value="chevrolet"/>
-                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
-                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
-                <element inactive_on_update="false" label="Ford" sequence="1" value="ford"/>
-                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
-                <element inactive_on_update="false" label="Dodge" sequence="2" value="dodge"/>
-                <element inactive_on_update="false" label="BMW" sequence="3" value="bmw"/>
-                <element inactive_on_update="false" label="Mercedes-Benz" sequence="4" value="mercedes-benz"/>
-                <element inactive_on_update="false" label="Audi" sequence="5" value="audi"/>
-                <element inactive_on_update="false" label="Toyota" sequence="6" value="toyota"/>
-                <element inactive_on_update="false" label="Infiniti" sequence="7" value="infiniti"/>
-                <element inactive_on_update="false" label="Nissan" sequence="8" value="nissan"/>
-                <element inactive_on_update="false" label="Porsche" sequence="9" value="porsche"/>
-            </choice>
-        </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Year" mandatory="true" max_length="40" name="u_choice_4" type="string">
+        <element label="Price" mandatory="true" max_length="40" name="price" type="integer"/>
+        <element label="Short description" max_length="150" name="short_description" type="string"/>
+        <element choice="1" label="Year" mandatory="true" max_length="40" name="year" type="choice">
             <choice>
                 <element inactive_on_update="false" label="2010" sequence="0" value="2010"/>
-                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
                 <element inactive_on_update="false" label="2011" sequence="1" value="2011"/>
-                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
                 <element inactive_on_update="false" label="2012" sequence="2" value="2012"/>
-                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
                 <element inactive_on_update="false" label="2013" sequence="3" value="2013"/>
                 <element inactive_on_update="false" label="2014" sequence="4" value="2014"/>
                 <element inactive_on_update="false" label="2015" sequence="5" value="2015"/>
@@ -73,33 +84,5 @@
                 <element inactive_on_update="false" label="2022" sequence="12" value="2022"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Condition" mandatory="true" max_length="40" name="u_choice_6" type="string">
-            <choice>
-                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
-                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
-                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
-                <element inactive_on_update="false" label="Used" sequence="1" value="used"/>
-                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
-            </choice>
-        </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Color" mandatory="true" max_length="40" name="u_choice_7" type="string">
-            <choice>
-                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
-                <element inactive_on_update="false" label="Red" sequence="0" value="red"/>
-                <element inactive_on_update="false" label="Black" sequence="1" value="black"/>
-                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
-                <element inactive_on_update="false" label="Blue" sequence="2" value="blue"/>
-                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
-                <element inactive_on_update="false" label="Orange" sequence="3" value="orange"/>
-                <element inactive_on_update="false" label="Yellow" sequence="4" value="yellow"/>
-                <element inactive_on_update="false" label="Purple" sequence="5" value="purple"/>
-                <element inactive_on_update="false" label="Green" sequence="6" value="green"/>
-                <element inactive_on_update="false" label="Matte Black" sequence="7" value="matte black"/>
-                <element inactive_on_update="false" label="Grey" sequence="8" value="grey"/>
-                <element inactive_on_update="false" label="White" sequence="9" value="white"/>
-            </choice>
-        </element>
-        <element label="Price" mandatory="true" max_length="40" name="u_integer_8" type="integer"/>
-        <element attributes="edge_encryption_enabled=true" label="Short description" max_length="40" name="u_string_5" type="string"/>
     </element>
 </database>

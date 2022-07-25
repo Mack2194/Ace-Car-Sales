@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="u_integer_8" label="Price" language="en" table="x_aaro2_ace_car_inventory">
+    <sys_documentation element="services" label="Services" language="en" table="x_aaro2_ace_car_services">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>u_integer_8</element>
+            <element>services</element>
             <help/>
             <hint/>
-            <label>Price</label>
+            <label>Services</label>
             <language>en</language>
-            <name>x_aaro2_ace_car_inventory</name>
-            <plural>Prices</plural>
+            <name>x_aaro2_ace_car_services</name>
+            <plural>Services</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>xxsmack</sys_created_by>
-            <sys_created_on>2022-07-20 16:07:25</sys_created_on>
+            <sys_created_on>2022-07-21 14:19:50</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>ec6f19b1477c5910713a0782e36d4355</sys_id>
+            <sys_id>d250d64adbbc1910f41dc15b139619de</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Price</sys_name>
+            <sys_name>Services</sys_name>
             <sys_package display_value="Ace Car Sales" source="x_aaro2_ace_car">bd5595fd47f85910713a0782e36d4340</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Ace Car Sales">bd5595fd47f85910713a0782e36d4340</sys_scope>
-            <sys_update_name>sys_documentation_x_aaro2_ace_car_inventory_u_integer_8_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_aaro2_ace_car_services_services_en</sys_update_name>
             <sys_updated_by>xxsmack</sys_updated_by>
-            <sys_updated_on>2022-07-20 16:07:25</sys_updated_on>
+            <sys_updated_on>2022-07-21 14:19:50</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

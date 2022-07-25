@@ -9,7 +9,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_aaro2_ace_car_inventory" name="x_aaro2_ace_car_inventory" sys_domain="global" view="Default view">d06f19b1477c5910713a0782e36d4312</sys_ui_form>
-            <sys_ui_section caption="NULL" display_value="" name="x_aaro2_ace_car_inventory" sys_domain="global" view="Default view">b97e1171477c5910713a0782e36d43ec</sys_ui_section>
+            <sys_ui_section caption="Car Inventory" display_value="Car Inventory" name="x_aaro2_ace_car_inventory" sys_domain="global" view="Default view">b97e1171477c5910713a0782e36d43ec</sys_ui_section>
             <sys_updated_by>xxsmack</sys_updated_by>
             <sys_updated_on>2022-07-20 16:07:25</sys_updated_on>
         </sys_ui_form_section>
@@ -22,7 +22,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_aaro2_ace_car_inventory" name="x_aaro2_ace_car_inventory" sys_domain="global" view="Default view">d06f19b1477c5910713a0782e36d4312</sys_ui_form>
-            <sys_ui_section caption="New Section" display_value="New Section" name="x_aaro2_ace_car_inventory" sys_domain="global" view="Default view">1c6f19b1477c5910713a0782e36d4310</sys_ui_section>
+            <sys_ui_section caption="Info Section" display_value="Info Section" name="x_aaro2_ace_car_inventory" sys_domain="global" view="Default view">1c6f19b1477c5910713a0782e36d4310</sys_ui_section>
             <sys_updated_by>xxsmack</sys_updated_by>
             <sys_updated_on>2022-07-20 16:07:25</sys_updated_on>
         </sys_ui_form_section>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Only Display models that are relevant to the make.</description>
+        <field>make</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Hide models based on make</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if ( newValue == '') {
+      return;
+    }
+    
+    var vehicleMake = g_form.getValue('make');
+    
+    // Clear all of the choices from the model field choice list
+    g_form.clearOptions('model');
+    
+    // setting the new value equal to 1 which 1 is Chevrolet
+    // if new value equals 1 then it will only show the models that correspond with chevorlet
+    if(newValue == '1'){
+      g_form.addOption('model','camaro 2ss coupe','CAMARO 2SS COUPE');
+      g_form.addOption('model','corvette stingray 3lt targa','CORVETTE STINGRAY 3LT TARGA');
+    }
+	
+	// setting the new value equal to 2 which 2 is Ford
+    // if new value equals 2 then it will only show the models that correspond with Ford
+    if(newValue == '2'){
+      g_form.addOption('model','mustang mach 1 coupe','MUSTANG MACH 1 COUPE');
+      g_form.addOption('model','f-150 xlt 4wd supercrew pick-up','F-150 XLT 4WD SUPERCREW PICK-UP');
+    }
+	
+	// setting the new value equal to 3 which 3 is Dodge
+    // if new value equals 3 then it will only show the models that correspond with Dodge
+    if(newValue == '3'){
+      g_form.addOption('model','challenger scat pack coupe','CHALLENGER SCAT PACK COUPE');
+      g_form.addOption('model','charger rt scat pack sedan','CHARGER RT SCAT PACK SEDAN');
+    }
+	
+	// setting the new value equal to 4 which 4 is BMW
+    // if new value equals 4 then it will only show the models that correspond with BMW
+    if(newValue == '4'){
+      g_form.addOption('model','m8 competition coupe','M8 COMPETITION COUPE');
+      g_form.addOption('model','i8 mega world hybrid coupe','I8 MEGA WORLD HYBRID COUPE');
+    }
+	
+	// setting the new value equal to 5 which 5 is Mercedes-Benz
+    // if new value equals 5 then it will only show the models that correspond with Mercedes-Benz
+    if(newValue == '5'){
+      g_form.addOption('model','amg gt c coupe','AMG GT C COUPE');
+      g_form.addOption('model','cls-class amg 63 sedan','CLS-CLASS AMG 63 SEDAN');
+    }
+	
+	// setting the new value equal to 6 which 6 is Audi
+    // if new value equals 6 then it will only show the models that correspond with Audi
+    if(newValue == '6'){
+      g_form.addOption('model','r8 performance coupe','R8 PERFORMANCE COUPE');
+      g_form.addOption('model','a6 design sedan','A6 DESIGN SEDAN');
+    }
+	
+	// setting the new value equal to 7 which 7 is Toyota
+    // if new value equals 7 then it will only show the models that correspond with Toyota
+    if(newValue == '7'){
+      g_form.addOption('model','camry xse sedan','CAMRY XSE SEDAN');
+      g_form.addOption('model','camry premium sedan','CAMRY PREMIUM SEDAN');
+    }
+	
+	// setting the new value equal to 8 which 8 is Infiniti
+    // if new value equals 8 then it will only show the models that correspond with Infiniti
+    if(newValue == '8'){
+      g_form.addOption('model','q70 premium sedan','Q70 PREMIUM SEDAN');
+      g_form.addOption('model','q60 premium coupe','Q60 PREMIUM COUPE');
+    }
+	
+	// setting the new value equal to 9 which 9 is Nissan
+    // if new value equals 9 then it will only show the models that correspond with Nissan
+    if(newValue == '9'){
+      g_form.addOption('model','gt-r premium coupe','GT-R PREMIUM COUPE');
+      g_form.addOption('model','370z coupe','370Z COUPE');
+    }
+	
+	// setting the new value equal to 10 which 10 is Porsche
+    // if new value equals 10 then it will only show the models that correspond with Porsche
+    if(newValue == '10'){
+      g_form.addOption('model','taycan 4s sedan','TAYCAN 4S SEDAN');
+      g_form.addOption('model','cayman s coupe','CAYMAN S COUPE');
+    }
+	
+	// If the form is loading and it is not a new record, set the model value to the
+    // value from the record before it was loaded
+    if(isLoading && !g_form.isNewRecord()){
+      g_form.setValue('model', Model);
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>xxsmack</sys_created_by>
+        <sys_created_on>2022-07-20 21:41:46</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>a00b6eb147349910713a0782e36d4331</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Hide models based on make</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Ace Car Sales" source="x_aaro2_ace_car">bd5595fd47f85910713a0782e36d4340</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ace Car Sales">bd5595fd47f85910713a0782e36d4340</sys_scope>
+        <sys_update_name>sys_script_client_a00b6eb147349910713a0782e36d4331</sys_update_name>
+        <sys_updated_by>xxsmack</sys_updated_by>
+        <sys_updated_on>2022-07-21 19:21:47</sys_updated_on>
+        <table>x_aaro2_ace_car_inventory</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

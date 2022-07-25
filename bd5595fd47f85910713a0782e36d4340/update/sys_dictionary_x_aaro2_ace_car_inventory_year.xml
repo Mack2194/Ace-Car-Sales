@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="u_string_5" table="x_aaro2_ace_car_inventory">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="year" table="x_aaro2_ace_car_inventory">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>edge_encryption_enabled=true</attributes>
+        <attributes/>
         <audit>false</audit>
-        <calculation/>
-        <choice>0</choice>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice>1</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Short description</column_label>
+        <column_label>Year</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -22,13 +27,13 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>u_string_5</element>
+        <element>year</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
-        <mandatory>false</mandatory>
+        <internal_type display_value="Choice">choice</internal_type>
+        <mandatory>true</mandatory>
         <max_length>40</max_length>
         <name>x_aaro2_ace_car_inventory</name>
         <next_element/>
@@ -47,18 +52,18 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>xxsmack</sys_created_by>
-        <sys_created_on>2022-07-20 16:07:25</sys_created_on>
+        <sys_created_on>2022-07-21 13:35:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>ec6f19b1477c5910713a0782e36d4335</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Short description</sys_name>
+        <sys_id>ac16868edb7c1910f41dc15b139619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Year</sys_name>
         <sys_package display_value="Ace Car Sales" source="x_aaro2_ace_car">bd5595fd47f85910713a0782e36d4340</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Ace Car Sales">bd5595fd47f85910713a0782e36d4340</sys_scope>
-        <sys_update_name>sys_dictionary_x_aaro2_ace_car_inventory_u_string_5</sys_update_name>
+        <sys_update_name>sys_dictionary_x_aaro2_ace_car_inventory_year</sys_update_name>
         <sys_updated_by>xxsmack</sys_updated_by>
-        <sys_updated_on>2022-07-20 19:24:42</sys_updated_on>
+        <sys_updated_on>2022-07-21 13:35:19</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
