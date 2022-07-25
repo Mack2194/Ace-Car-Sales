@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Car Services" section_id="0d71f1fd47bc5910713a0782e36d4375" sys_domain="global" table="x_aaro2_ace_car_services" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>services</element>
+            <element>name</element>
             <position>0</position>
             <sys_created_by>xxsmack</sys_created_by>
-            <sys_created_on>2022-07-21 16:43:48</sys_created_on>
-            <sys_id>5f41ba8edb305910f41dc15b139619d4</sys_id>
+            <sys_created_on>2022-07-25 16:40:21</sys_created_on>
+            <sys_id>33d69bd3db341150f41dc15b1396195f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Car Services" display_value="Car Services" name="x_aaro2_ace_car_services" sys_domain="global" view="Default view">0d71f1fd47bc5910713a0782e36d4375</sys_ui_section>
             <sys_updated_by>xxsmack</sys_updated_by>
-            <sys_updated_on>2022-07-21 16:43:48</sys_updated_on>
+            <sys_updated_on>2022-07-25 16:40:21</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>terms_and_conditions</element>
             <position>1</position>
             <sys_created_by>xxsmack</sys_created_by>
-            <sys_created_on>2022-07-21 16:43:48</sys_created_on>
-            <sys_id>5341ba8edb305910f41dc15b139619d5</sys_id>
+            <sys_created_on>2022-07-25 16:40:21</sys_created_on>
+            <sys_id>7bd69bd3db341150f41dc15b1396195f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Car Services" display_value="Car Services" name="x_aaro2_ace_car_services" sys_domain="global" view="Default view">0d71f1fd47bc5910713a0782e36d4375</sys_ui_section>
             <sys_updated_by>xxsmack</sys_updated_by>
-            <sys_updated_on>2022-07-21 16:43:48</sys_updated_on>
+            <sys_updated_on>2022-07-25 16:40:21</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>xxsmack</sys_created_by>
-            <sys_created_on>2022-07-21 16:43:48</sys_created_on>
-            <sys_id>5741ba8edb305910f41dc15b139619d5</sys_id>
+            <sys_created_on>2022-07-25 16:40:21</sys_created_on>
+            <sys_id>7fd69bd3db341150f41dc15b1396195f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Car Services" display_value="Car Services" name="x_aaro2_ace_car_services" sys_domain="global" view="Default view">0d71f1fd47bc5910713a0782e36d4375</sys_ui_section>
             <sys_updated_by>xxsmack</sys_updated_by>
-            <sys_updated_on>2022-07-21 16:43:48</sys_updated_on>
+            <sys_updated_on>2022-07-25 16:40:21</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>status</element>
             <position>3</position>
             <sys_created_by>xxsmack</sys_created_by>
-            <sys_created_on>2022-07-21 16:43:48</sys_created_on>
-            <sys_id>5b41ba8edb305910f41dc15b139619d5</sys_id>
+            <sys_created_on>2022-07-25 16:40:21</sys_created_on>
+            <sys_id>73d69bd3db341150f41dc15b13961960</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Car Services" display_value="Car Services" name="x_aaro2_ace_car_services" sys_domain="global" view="Default view">0d71f1fd47bc5910713a0782e36d4375</sys_ui_section>
             <sys_updated_by>xxsmack</sys_updated_by>
-            <sys_updated_on>2022-07-21 16:43:48</sys_updated_on>
+            <sys_updated_on>2022-07-25 16:40:21</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>price</element>
             <position>4</position>
             <sys_created_by>xxsmack</sys_created_by>
-            <sys_created_on>2022-07-21 16:43:48</sys_created_on>
-            <sys_id>5f41ba8edb305910f41dc15b139619d5</sys_id>
+            <sys_created_on>2022-07-25 16:40:21</sys_created_on>
+            <sys_id>77d69bd3db341150f41dc15b13961960</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Car Services" display_value="Car Services" name="x_aaro2_ace_car_services" sys_domain="global" view="Default view">0d71f1fd47bc5910713a0782e36d4375</sys_ui_section>
             <sys_updated_by>xxsmack</sys_updated_by>
-            <sys_updated_on>2022-07-21 16:43:48</sys_updated_on>
+            <sys_updated_on>2022-07-25 16:40:21</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

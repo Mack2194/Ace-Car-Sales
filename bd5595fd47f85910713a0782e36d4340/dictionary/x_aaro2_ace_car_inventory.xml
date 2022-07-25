@@ -26,43 +26,43 @@
                 <element inactive_on_update="false" label="Used" sequence="1" value="used"/>
             </choice>
         </element>
-        <element choice="3" default="none" label="Make" mandatory="true" max_length="40" name="make" type="choice">
+        <element choice="1" label="Make" mandatory="true" max_length="40" name="make" type="choice">
             <choice>
-                <element inactive_on_update="false" label="None" sequence="0" value="none"/>
-                <element inactive_on_update="false" label="Chevrolet" sequence="1" value="1"/>
-                <element inactive_on_update="false" label="Ford" sequence="2" value="2"/>
-                <element inactive_on_update="false" label="Dodge" sequence="3" value="3"/>
-                <element inactive_on_update="false" label="BMW" sequence="4" value="4"/>
-                <element inactive_on_update="false" label="Mercedes-Benz" sequence="5" value="5"/>
-                <element inactive_on_update="false" label="Audi" sequence="6" value="6"/>
-                <element inactive_on_update="false" label="Toyota" sequence="7" value="7"/>
-                <element inactive_on_update="false" label="Infiniti" sequence="8" value="8"/>
-                <element inactive_on_update="false" label="Nissan" sequence="9" value="9"/>
-                <element inactive_on_update="false" label="Porsche" sequence="10" value="10"/>
+                <element inactive_on_update="false" label="Chevrolet" sequence="0" value="1"/>
+                <element inactive="true" inactive_on_update="true" label="None" sequence="0" value="none"/>
+                <element inactive_on_update="false" label="Ford" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Dodge" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="BMW" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="Mercedes-Benz" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="Audi" sequence="5" value="6"/>
+                <element inactive_on_update="false" label="Toyota" sequence="6" value="7"/>
+                <element inactive_on_update="false" label="Infiniti" sequence="7" value="8"/>
+                <element inactive_on_update="false" label="Nissan" sequence="8" value="9"/>
+                <element inactive_on_update="false" label="Porsche" sequence="9" value="10"/>
             </choice>
         </element>
-        <element choice="1" label="Model" mandatory="true" max_length="40" name="model" type="choice">
+        <element choice="1" dependent="make" dependent_on_field="make" display="true" label="Model" mandatory="true" max_length="40" name="model" type="choice" use_dependent_field="true">
             <choice>
-                <element inactive_on_update="false" label="CAMARO 2SS COUPE" sequence="0" value="camaro 2ss coupe"/>
-                <element inactive_on_update="false" label="CORVETTE STINGRAY 3LT TARGA" sequence="1" value="corvette stingray 3lt targa"/>
-                <element inactive_on_update="false" label="MUSTANG MACH 1 COUPE" sequence="2" value="mustang mach 1 coupe"/>
-                <element inactive_on_update="false" label="F-150 XLT 4WD SUPERCREW PICK-UP" sequence="3" value="f-150 xlt 4wd supercrew pick-up"/>
-                <element inactive_on_update="false" label="M8 COMPETITION COUPE" sequence="4" value="m8 competition coupe"/>
-                <element inactive_on_update="false" label="I8 MEGA WORLD HYBRID COUPE" sequence="5" value="i8 mega world hybrid coupe"/>
-                <element inactive_on_update="false" label="R8 PERFORMANCE COUPE" sequence="6" value="r8 performance coupe"/>
-                <element inactive_on_update="false" label="A6 DESIGN SEDAN" sequence="7" value="a6 design sedan"/>
-                <element inactive_on_update="false" label="CHALLENGER SCAT PACK COUPE" sequence="8" value="challenger scat pack coupe"/>
-                <element inactive_on_update="false" label="CHARGER RT SCAT PACK SEDAN" sequence="9" value="charger rt scat pack sedan"/>
-                <element inactive_on_update="false" label="Q70 PREMIUM SEDAN" sequence="10" value="q70 premium sedan"/>
-                <element inactive_on_update="false" label="Q60 PREMIUM COUPE" sequence="11" value="q60 premium coupe"/>
-                <element inactive_on_update="false" label="AMG GT C COUPE" sequence="12" value="amg gt c coupe"/>
-                <element inactive_on_update="false" label="CLS-CLASS AMG 63 SEDAN" sequence="13" value="cls-class amg 63 sedan"/>
-                <element inactive_on_update="false" label="TAYCAN 4S SEDAN" sequence="14" value="taycan 4s sedan"/>
-                <element inactive_on_update="false" label="CAYMAN S COUPE" sequence="15" value="cayman s coupe"/>
-                <element inactive_on_update="false" label="GT-R PREMIUM COUPE" sequence="16" value="gt-r premium coupe"/>
-                <element inactive_on_update="false" label="370Z COUPE" sequence="17" value="370z coupe"/>
-                <element inactive_on_update="false" label="CAMRY XSE SEDAN" sequence="18" value="camry xse sedan"/>
-                <element inactive_on_update="false" label="CAMRY PREMIUM SEDAN" sequence="19" value="camry premium sedan"/>
+                <element dependent_value="1" inactive_on_update="false" label="CAMARO 2SS COUPE" sequence="0" value="camaro 2ss coupe"/>
+                <element dependent_value="1" inactive_on_update="false" label="CORVETTE STINGRAY 3LT TARGA" sequence="1" value="corvette stingray 3lt targa"/>
+                <element dependent_value="2" inactive_on_update="false" label="MUSTANG MACH 1 COUPE" sequence="2" value="mustang mach 1 coupe"/>
+                <element dependent_value="2" inactive_on_update="false" label="F-150 XLT 4WD SUPERCREW PICK-UP" sequence="3" value="f-150 xlt 4wd supercrew pick-up"/>
+                <element dependent_value="4" inactive_on_update="false" label="M8 COMPETITION COUPE" sequence="4" value="m8 competition coupe"/>
+                <element dependent_value="4" inactive_on_update="false" label="I8 MEGA WORLD HYBRID COUPE" sequence="5" value="i8 mega world hybrid coupe"/>
+                <element dependent_value="6" inactive_on_update="false" label="R8 PERFORMANCE COUPE" sequence="6" value="r8 performance coupe"/>
+                <element dependent_value="6" inactive_on_update="false" label="A6 DESIGN SEDAN" sequence="7" value="a6 design sedan"/>
+                <element dependent_value="3" inactive_on_update="false" label="CHALLENGER SCAT PACK COUPE" sequence="8" value="challenger scat pack coupe"/>
+                <element dependent_value="3" inactive_on_update="false" label="CHARGER RT SCAT PACK SEDAN" sequence="9" value="charger rt scat pack sedan"/>
+                <element dependent_value="8" inactive_on_update="false" label="Q70 PREMIUM SEDAN" sequence="10" value="q70 premium sedan"/>
+                <element dependent_value="8" inactive_on_update="false" label="Q60 PREMIUM COUPE" sequence="11" value="q60 premium coupe"/>
+                <element dependent_value="5" inactive_on_update="false" label="AMG GT C COUPE" sequence="12" value="amg gt c coupe"/>
+                <element dependent_value="5" inactive_on_update="false" label="CLS-CLASS AMG 63 SEDAN" sequence="13" value="cls-class amg 63 sedan"/>
+                <element dependent_value="10" inactive_on_update="false" label="TAYCAN 4S SEDAN" sequence="14" value="taycan 4s sedan"/>
+                <element dependent_value="10" inactive_on_update="false" label="CAYMAN S COUPE" sequence="15" value="cayman s coupe"/>
+                <element dependent_value="9" inactive_on_update="false" label="GT-R PREMIUM COUPE" sequence="16" value="gt-r premium coupe"/>
+                <element dependent_value="9" inactive_on_update="false" label="370Z COUPE" sequence="17" value="370z coupe"/>
+                <element dependent_value="7" inactive_on_update="false" label="CAMRY XSE SEDAN" sequence="18" value="camry xse sedan"/>
+                <element dependent_value="7" inactive_on_update="false" label="CAMRY PREMIUM SEDAN" sequence="19" value="camry premium sedan"/>
             </choice>
         </element>
         <element label="Price" mandatory="true" max_length="40" name="price" type="integer"/>
