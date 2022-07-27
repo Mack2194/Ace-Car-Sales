@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Inventory" max_length="40" name="x_aaro2_ace_car_inventory" sizeclass="2" type="collection">
+    <element label="Inventory" max_length="40" name="x_aaro2_ace_car_inventory" sizeclass="3" type="collection">
         <element choice="1" label="Availability" mandatory="true" max_length="40" name="availability" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Available" sequence="0" value="available"/>

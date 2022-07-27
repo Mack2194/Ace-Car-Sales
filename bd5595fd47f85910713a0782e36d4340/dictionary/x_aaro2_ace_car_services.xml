@@ -11,7 +11,7 @@
         </element>
         <element label="Price" max_length="40" name="price" type="integer"/>
         <element label="Short Description" max_length="200" name="short_description" type="string"/>
-        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+        <element choice="1" label="Status" mandatory="true" max_length="40" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
                 <element inactive_on_update="false" label="Inactive" sequence="1" value="inactive"/>
