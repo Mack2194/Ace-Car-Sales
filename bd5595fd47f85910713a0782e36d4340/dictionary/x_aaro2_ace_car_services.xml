@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Services" max_length="40" name="x_aaro2_ace_car_services" sizeclass="3" type="collection">
-        <element choice="1" display="true" label="Name" mandatory="true" max_length="40" name="name" type="choice">
+    <element label="Services" max_length="40" name="x_aaro2_ace_car_services" sizeclass="5" type="collection">
+        <element choice="1" default="brake_inspection" display="true" label="Name" mandatory="true" max_length="40" name="name" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Brake Inspection" sequence="1" value="brake_inspection"/>
-                <element inactive_on_update="false" label="Fluid Inspection" sequence="2" value="fluid_inspection"/>
-                <element inactive_on_update="false" label="Multi-Point Inspection" sequence="3" value="multi-point-inspection"/>
-                <element inactive_on_update="false" label="Oil &amp; filter" sequence="4" value="oil_filter"/>
-                <element inactive_on_update="false" label="Tire Rotation" sequence="5" value="tire_rotation"/>
+                <element inactive_on_update="false" label="Brake Inspection" sequence="0" value="brake_inspection"/>
+                <element inactive_on_update="false" label="Fluid Inspection" sequence="1" value="fluid_inspection"/>
+                <element inactive_on_update="false" label="Multi-Point Inspection" sequence="2" value="multi-point-inspection"/>
+                <element inactive_on_update="false" label="Oil &amp; Filter" sequence="3" value="oil_filter"/>
+                <element inactive_on_update="false" label="Tire Rotation" sequence="4" value="tire_rotation"/>
             </choice>
         </element>
         <element label="Price" max_length="40" name="price" type="integer"/>
