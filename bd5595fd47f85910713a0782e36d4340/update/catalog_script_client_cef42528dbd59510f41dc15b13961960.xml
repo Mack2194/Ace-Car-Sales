@@ -8,14 +8,14 @@
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
         <cat_item display_value="Ace Car Sales Request">7fe88e04db051550f41dc15b139619e4</cat_item>
-        <cat_variable>IO:e57606d4dbc95550f41dc15b139619e3</cat_variable>
+        <cat_variable>IO:31c795dedbc11190f41dc15b1396192e</cat_variable>
         <condition/>
         <description/>
         <field/>
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>Validate Max Price</name>
+        <name>Hide Date Field Based On Delivery Option</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
     if (isLoading || newValue == '') {
@@ -24,37 +24,33 @@
 
     //Type appropriate comment here, and begin script below
 
-    // Allows formats of 9999999999, and no letters to be entered. 
-    var maxPrice = /^(\d{1,})$/;
-	
-    //An if statement to check to see if the max price number field is in the correct format
-    if (!maxPrice.test(newValue)) {
-		g_form.setValue('max_price', '');
-        g_form.showFieldMsg('max_price', 'Please enter a valid number.', 'error');
+    if (g_form.getValue('delivery_option') == 'drive_off') {
+        g_form.setMandatory('delivery_date', false);
+        g_form.setDisplay('delivery_date', false);
+
+
+    } else {
+        g_form.setDisplay('delivery_date', true);
+        g_form.setMandatory('delivery_date', true);
     }
-	
-    //if statement to make sure that the min price field is lower than the max price field.	
-    if (parseInt(g_form.getValue('min_price')) >= parseInt(g_form.getValue('max_price'))) {
-        g_form.clearValue('max_price');
-        g_form.showFieldMsg('max_price', 'The maximun price cannot be less than or equal to the minimum price.', 'error');
-    }
+
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>xxsmack</sys_created_by>
-        <sys_created_on>2022-07-29 13:53:27</sys_created_on>
+        <sys_created_on>2022-08-10 16:03:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_id>d2f65fa0db85d550f41dc15b13961995</sys_id>
-        <sys_mod_count>17</sys_mod_count>
-        <sys_name>Validate Max Price</sys_name>
+        <sys_id>cef42528dbd59510f41dc15b13961960</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Hide Date Field Based On Delivery Option</sys_name>
         <sys_overrides/>
         <sys_package display_value="Ace Car Sales" source="x_aaro2_ace_car">bd5595fd47f85910713a0782e36d4340</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Ace Car Sales">bd5595fd47f85910713a0782e36d4340</sys_scope>
-        <sys_update_name>catalog_script_client_d2f65fa0db85d550f41dc15b13961995</sys_update_name>
+        <sys_update_name>catalog_script_client_cef42528dbd59510f41dc15b13961960</sys_update_name>
         <sys_updated_by>xxsmack</sys_updated_by>
-        <sys_updated_on>2022-08-10 16:11:15</sys_updated_on>
+        <sys_updated_on>2022-08-10 16:20:25</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

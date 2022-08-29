@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
-    <sc_cat_item_producer action="INSERT_OR_UPDATE">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_content">
+    <sc_cat_item_content action="INSERT_OR_UPDATE">
         <access_type>restricted</access_type>
-        <active>false</active>
-        <allow_edit>false</allow_edit>
+        <active>true</active>
         <availability>on_desktop</availability>
         <billable>false</billable>
-        <can_cancel>false</can_cancel>
         <category display_value="Fleet Services">82524ada4f338b001491a50f0310c707</category>
-        <checked_out>false</checked_out>
+        <checked_out/>
+        <content_type>external</content_type>
         <cost>0</cost>
         <custom_cart/>
         <delivery_plan/>
@@ -21,8 +20,9 @@
         <group/>
         <hide_sp>false</hide_sp>
         <icon/>
-        <ignore_price>true</ignore_price>
+        <ignore_price>false</ignore_price>
         <image/>
+        <kb_article/>
         <location/>
         <mandatory_attachment>false</mandatory_attachment>
         <meta/>
@@ -30,6 +30,7 @@
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
+        <module/>
         <name>Ace Car Sales Request</name>
         <no_attachment_v2>false</no_attachment_v2>
         <no_cart>false</no_cart>
@@ -41,46 +42,42 @@
         <no_quantity>false</no_quantity>
         <no_quantity_v2>false</no_quantity_v2>
         <no_search>false</no_search>
-        <no_wishlist_v2>true</no_wishlist_v2>
+        <no_wishlist_v2>false</no_wishlist_v2>
         <omit_price>false</omit_price>
         <order>0</order>
         <ordered_item_link/>
         <owner display_value="Stacy Mack - Admin">bcec64c747509910713a0782e36d4314</owner>
         <picture/>
-        <post_insert_script/>
-        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=7fe88e04db051550f41dc15b139619e4&amp;sysparm_preview=true", "summary");</preview>
+        <preview>JavaScript: popupOpenStandard("/esc?id=ace_car_sales_request&amp;table=x_aaro2_ace_car_request&amp;sys_id=-1&amp;sysparm_preview=true", "summary");</preview>
         <price>0</price>
         <published_ref/>
         <recurring_frequency/>
-        <redirect_url>generated_record</redirect_url>
+        <recurring_price>0</recurring_price>
         <request_method/>
-        <roles>x_aaro2_ace_car.user,x_aaro2_ace_car.requester,x_aaro2_ace_car.admin</roles>
-        <save_options/>
-        <save_script/>
+        <roles>x_aaro2_ace_car.user,x_aaro2_ace_car.admin</roles>
         <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
-        <script/>
         <short_description/>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
-        <state>published</state>
-        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <state/>
+        <sys_class_name>sc_cat_item_content</sys_class_name>
         <sys_created_by>xxsmack</sys_created_by>
-        <sys_created_on>2022-07-27 19:36:57</sys_created_on>
+        <sys_created_on>2022-08-25 22:09:41</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>7fe88e04db051550f41dc15b139619e4</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_id>27fa4ced47e55118713a0782e36d437e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Ace Car Sales Request</sys_name>
         <sys_package display_value="Ace Car Sales" source="x_aaro2_ace_car">bd5595fd47f85910713a0782e36d4340</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Ace Car Sales">bd5595fd47f85910713a0782e36d4340</sys_scope>
-        <sys_update_name>sc_cat_item_producer_7fe88e04db051550f41dc15b139619e4</sys_update_name>
+        <sys_update_name>sc_cat_item_content_27fa4ced47e55118713a0782e36d437e</sys_update_name>
         <sys_updated_by>xxsmack</sys_updated_by>
-        <sys_updated_on>2022-08-25 22:17:05</sys_updated_on>
-        <table_name>x_aaro2_ace_car_request</table_name>
+        <sys_updated_on>2022-08-25 22:14:04</sys_updated_on>
+        <target>_blank</target>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
@@ -93,31 +90,49 @@
         <u_part_number/>
         <u_required_approvals/>
         <u_sourceable>false</u_sourceable>
+        <u_table_name/>
+        <url>/esc?id=ace_car_sales_request&amp;table=x_aaro2_ace_car_request&amp;sys_id=-1</url>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
         <workflow/>
-    </sc_cat_item_producer>
-    <sys_translated_text action="delete_multiple" query="documentkey=7fe88e04db051550f41dc15b139619e4"/>
-    <fx_price action="delete_multiple" query="id=7fe88e04db051550f41dc15b139619e4"/>
+    </sc_cat_item_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=27fa4ced47e55118713a0782e36d437e"/>
+    <fx_price action="delete_multiple" query="id=27fa4ced47e55118713a0782e36d437e"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price</field>
-        <id>7fe88e04db051550f41dc15b139619e4</id>
+        <id>27fa4ced47e55118713a0782e36d437e</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>xxsmack</sys_created_by>
-        <sys_created_on>2022-07-27 19:36:57</sys_created_on>
-        <sys_id>4a7216ccdb051550f41dc15b139619b9</sys_id>
+        <sys_created_on>2022-08-25 22:09:41</sys_created_on>
+        <sys_id>d68b882147295118713a0782e36d435f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>xxsmack</sys_updated_by>
-        <sys_updated_on>2022-07-27 19:36:57</sys_updated_on>
-        <table>sc_cat_item_producer</table>
+        <sys_updated_on>2022-08-25 22:09:41</sys_updated_on>
+        <table>sc_cat_item_content</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>recurring_price</field>
+        <id>27fa4ced47e55118713a0782e36d437e</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>xxsmack</sys_created_by>
+        <sys_created_on>2022-08-25 22:09:41</sys_created_on>
+        <sys_id>9e8b882147295118713a0782e36d4360</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>xxsmack</sys_updated_by>
+        <sys_updated_on>2022-08-25 22:09:41</sys_updated_on>
+        <table>sc_cat_item_content</table>
         <type>calculated</type>
     </fx_price>
 </record_update>

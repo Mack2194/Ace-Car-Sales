@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new">
     <item_option_new action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <attributes/>
         <cat_item display_value="Ace Car Sales Request">7fe88e04db051550f41dc15b139619e4</cat_item>
         <category/>
@@ -9,7 +9,7 @@
         <choice_table/>
         <create_roles/>
         <default_html_value/>
-        <default_value>999999999</default_value>
+        <default_value/>
         <delete_roles/>
         <delivery_plan/>
         <description/>
@@ -19,7 +19,7 @@
         <dynamic_ref_qual/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>max_price</field>
+        <field/>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -33,18 +33,18 @@
         <lookup_table/>
         <lookup_unique>false</lookup_unique>
         <lookup_value/>
-        <macro/>
+        <macro display_value="Purchase Summary">3b0e8198db9d1510f41dc15b13961916</macro>
         <macroponent/>
         <mandatory>false</mandatory>
-        <map_to_field>true</map_to_field>
+        <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>max_price</name>
-        <order>70</order>
+        <name>purchase_summry</name>
+        <order/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Max Price</question_text>
+        <question_text>Purchase Summary</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -66,21 +66,21 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>xxsmack</sys_created_by>
-        <sys_created_on>2022-07-28 13:23:28</sys_created_on>
+        <sys_created_on>2022-08-09 20:07:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>e57606d4dbc95550f41dc15b139619e3</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Max Price</sys_name>
+        <sys_id>31b4d190dbdd1510f41dc15b1396199c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Purchase Summary</sys_name>
         <sys_package display_value="Ace Car Sales" source="x_aaro2_ace_car">bd5595fd47f85910713a0782e36d4340</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Ace Car Sales">bd5595fd47f85910713a0782e36d4340</sys_scope>
-        <sys_update_name>item_option_new_e57606d4dbc95550f41dc15b139619e3</sys_update_name>
+        <sys_update_name>item_option_new_31b4d190dbdd1510f41dc15b1396199c</sys_update_name>
         <sys_updated_by>xxsmack</sys_updated_by>
-        <sys_updated_on>2022-08-10 18:47:27</sys_updated_on>
+        <sys_updated_on>2022-08-10 19:52:15</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>6</type>
+        <type>17</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
@@ -96,22 +96,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=e57606d4dbc95550f41dc15b139619e3"/>
-    <fx_price action="delete_multiple" query="id=e57606d4dbc95550f41dc15b139619e3"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=31b4d190dbdd1510f41dc15b1396199c"/>
+    <fx_price action="delete_multiple" query="id=31b4d190dbdd1510f41dc15b1396199c"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>e57606d4dbc95550f41dc15b139619e3</id>
+        <id>31b4d190dbdd1510f41dc15b1396199c</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>xxsmack</sys_created_by>
-        <sys_created_on>2022-07-28 13:23:28</sys_created_on>
-        <sys_id>b0960ad4dbc95550f41dc15b13961937</sys_id>
+        <sys_created_on>2022-08-09 20:07:12</sys_created_on>
+        <sys_id>4c161514dbdd1510f41dc15b1396198d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>xxsmack</sys_updated_by>
-        <sys_updated_on>2022-07-28 13:23:28</sys_updated_on>
+        <sys_updated_on>2022-08-09 20:07:12</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -119,16 +119,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>e57606d4dbc95550f41dc15b139619e3</id>
+        <id>31b4d190dbdd1510f41dc15b1396199c</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>xxsmack</sys_created_by>
-        <sys_created_on>2022-07-28 13:23:28</sys_created_on>
-        <sys_id>78960ad4dbc95550f41dc15b13961936</sys_id>
+        <sys_created_on>2022-08-09 20:07:12</sys_created_on>
+        <sys_id>04161514dbdd1510f41dc15b1396198c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>xxsmack</sys_updated_by>
-        <sys_updated_on>2022-07-28 13:23:28</sys_updated_on>
+        <sys_updated_on>2022-08-09 20:07:12</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

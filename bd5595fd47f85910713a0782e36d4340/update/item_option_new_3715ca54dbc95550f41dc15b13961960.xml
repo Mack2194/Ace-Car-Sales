@@ -19,7 +19,7 @@
         <dynamic_ref_qual/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field/>
+        <field>min_price</field>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -36,7 +36,7 @@
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
-        <map_to_field>false</map_to_field>
+        <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>min_price</name>
@@ -69,7 +69,7 @@
         <sys_created_on>2022-07-28 13:21:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3715ca54dbc95550f41dc15b13961960</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Min Price</sys_name>
         <sys_package display_value="Ace Car Sales" source="x_aaro2_ace_car">bd5595fd47f85910713a0782e36d4340</sys_package>
         <sys_policy/>
@@ -77,7 +77,7 @@
         <sys_scope display_value="Ace Car Sales">bd5595fd47f85910713a0782e36d4340</sys_scope>
         <sys_update_name>item_option_new_3715ca54dbc95550f41dc15b13961960</sys_update_name>
         <sys_updated_by>xxsmack</sys_updated_by>
-        <sys_updated_on>2022-07-29 19:38:33</sys_updated_on>
+        <sys_updated_on>2022-08-10 18:47:35</sys_updated_on>
         <table/>
         <tooltip/>
         <type>6</type>

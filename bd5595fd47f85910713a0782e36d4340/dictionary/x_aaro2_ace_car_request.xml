@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Request" max_length="40" name="x_aaro2_ace_car_request" sizeclass="9" type="collection">
+    <element label="Request" max_length="40" name="x_aaro2_ace_car_request" sizeclass="11" type="collection">
         <element label="Address" mandatory="true" max_length="200" name="address" type="string"/>
         <element choice="1" label="Condition" mandatory="true" max_length="32" name="condition" reference="x_aaro2_ace_car_inventory" type="choice">
             <choice>
@@ -7,16 +7,24 @@
                 <element inactive_on_update="false" label="Used" sequence="1" value="used"/>
             </choice>
         </element>
+        <element label="Delivery Date" max_length="40" name="delivery_date" type="glide_date_time"/>
+        <element choice="3" default="drive_off" label="Delivery Option" mandatory="true" max_length="40" name="delivery_option" type="choice">
+            <choice>
+                <element dependent_value="1" inactive_on_update="false" label="Deliver" value="deliver"/>
+                <element inactive_on_update="false" label="Drive Off" value="drive_off"/>
+                <element dependent_value="1" inactive_on_update="false" label="Pick Up" value="pick_up"/>
+            </choice>
+        </element>
         <element label="First Name" mandatory="true" max_length="40" name="first_name" type="string"/>
         <element label="Last Name" mandatory="true" max_length="40" name="last_name" type="string"/>
-        <element active="false" label="Max Price" max_length="40" name="max_price" type="integer"/>
-        <element active="false" label="Min Price" max_length="40" name="min_price" type="integer"/>
+        <element default="999999999" label="Max Price" max_length="40" name="max_price" type="string"/>
+        <element default="1" label="Min Price" max_length="40" name="min_price" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Phone Number" mandatory="true" max_length="40" name="phone_number" type="string"/>
         <element choice="1" label="Services" max_length="4000" name="services" reference="x_aaro2_ace_car_services" reference_qual="status=active^EQ" reference_qual_condition="status=active^EQ" type="glide_list">
             <choice/>
         </element>
-        <element label="Vehicle" mandatory="true" max_length="32" name="vehicle" reference="x_aaro2_ace_car_inventory" reference_qual="availability=available^EQ" reference_qual_condition="availability=available^EQ" type="reference"/>
+        <element label="Vehicle" mandatory="true" max_length="32" name="vehicle" reference="x_aaro2_ace_car_inventory" reference_qual="javascript: &quot;sys_idIN&quot; + new x_aaro2_ace_car.Utils().getVehicle(current.min_price,current.max_price,current.condition);" type="reference" use_reference_qualifier="advanced"/>
         <index name="index">
             <element name="condition"/>
         </index>

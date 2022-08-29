@@ -9,22 +9,22 @@
         <name>Utils</name>
         <script><![CDATA[var Utils = Class.create();
 Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
-	
-	//Returns an array of sys_ids of cars that are filtered out based upon the selection made by the requester.
+
+    //Returns an array of sys_ids of cars that are filtered out based upon the selection made by the requester.
     getVehicle: function getVehicle(minPrice, maxPrice, condition) {
         var cars = [];
 
         var gr = new GlideRecord('x_aaro2_ace_car_inventory');
-		// filters cars list based upon the availability 
+        // filters cars list based upon the availability 
         gr.addQuery('availability', 'available');
-		/* filters car list based upon the min, and max price selected as well as the condition of the car(new/used) 
-		and then adds this all to a query.*/
+        /* filters car list based upon the min, and max price selected as well as the condition of the 
+		car(new/used)  and then adds this all to a query.*/
         gr.addQuery('price', '>=', minPrice); // min price
         gr.addQuery('price', '<=', maxPrice); //max price
         gr.addQuery('condition', condition);
         gr.query();
 
-		//This loops through the query while adding the filtered car list to an array and then returns that array list
+        //This loops through the query while adding the filtered car list to an array and then returns that array list
         while (gr.next()) {
 
             cars.push(gr.getValue('sys_id'));
@@ -35,6 +35,53 @@ Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         gs.info(cars);
         return cars;
     },
+    // Returns the sys_id of the car selcted along with the price of the car 
+    getVehicleInfo: function getVehicleInfo() {
+        var vehicleInfo = {};
+        //get the value of the parameter passed in from the client-side script.
+        var vehicleSysId = this.getParameter('sysparm_vehicle_sysid');
+        var vehicle = new GlideRecord('x_aaro2_ace_car_inventory');
+        if (vehicle.get(vehicleSysId)) {
+            //  gs.info('Ace Car' + vehicle.model);
+            vehicleInfo.model = vehicle.getDisplayValue('model');
+            vehicleInfo.cost = (parseFloat(vehicle.getValue('price').replace(/,/g, '')).toFixed(2)).toString();
+        }
+        // gs.info(vehicleInfo.model + " " + vehicleInfo.cost);
+        encodedData = JSON.stringify(vehicleInfo);
+        // gs.info(encodedData + 'Ace Car Sales');
+        return encodedData;
+    },
+    //returns an array of sys ids of the services selected along with their price
+    getServiceInfo: function getServiceInfo() {
+        var serviceInfo = [];
+        var record = {};
+        //get the value of the parameter passed in from the client-side script.
+        var serviceSysIds = this.getParameter('sysparm_service_sysids');
+        var serviceSysIdArray = serviceSysIds.split(",");
+        var service = new GlideRecord('x_aaro2_ace_car_services');
+
+        // gs.info(serviceSysIds + 'ace car ' + typeof serviceSysIds);
+        // gs.info(serviceSysIds.length + 'ace car');
+
+        //for loop to loop the and add the selcted servifces to the array
+        for (var i = 0; i < serviceSysIdArray.length; i++) {
+            //gs.info('ace car' + i + '-- ' + serviceSysIdArray[i]);
+            if (service.get(serviceSysIdArray[i])) {
+                // gs.info('ace car' + i + '-- ' + service.sys_id);
+                record = {
+                    'name': service.getDisplayValue('name'),
+                    'cost': parseFloat(service.getDisplayValue('price')).toFixed(2)
+                };
+                //serviceInfo.push(record);
+            }
+            serviceInfo.push(record);
+        }
+        // gs.info(serviceInfo[0] + serviceInfo[1]);
+        encodedData = JSON.stringify(serviceInfo);
+        // gs.info(encodedData + 'Ace Car Sales');
+        return encodedData;
+    },
+
 
     type: 'Utils'
 });]]></script>
@@ -43,7 +90,7 @@ Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_on>2022-07-28 21:38:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a737bf50db059550f41dc15b139619db</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>Utils</sys_name>
         <sys_package display_value="Ace Car Sales" source="x_aaro2_ace_car">bd5595fd47f85910713a0782e36d4340</sys_package>
         <sys_policy/>
@@ -51,6 +98,6 @@ Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="Ace Car Sales">bd5595fd47f85910713a0782e36d4340</sys_scope>
         <sys_update_name>sys_script_include_a737bf50db059550f41dc15b139619db</sys_update_name>
         <sys_updated_by>xxsmack</sys_updated_by>
-        <sys_updated_on>2022-07-29 13:07:30</sys_updated_on>
+        <sys_updated_on>2022-08-29 14:40:42</sys_updated_on>
     </sys_script_include>
 </record_update>

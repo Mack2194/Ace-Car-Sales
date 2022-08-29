@@ -4,13 +4,13 @@
             <element>services</element>
             <position>0</position>
             <sys_created_by>xxsmack</sys_created_by>
-            <sys_created_on>2022-07-25 17:34:14</sys_created_on>
-            <sys_id>05336f93db741150f41dc15b13961982</sys_id>
+            <sys_created_on>2022-08-03 17:05:04</sys_created_on>
+            <sys_id>55d2b51edb451190f41dc15b1396194d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Service Selection" display_value="Service Selection" name="x_aaro2_ace_car_request" sys_domain="global" view="Default view">9c399b97db341150f41dc15b139619fa</sys_ui_section>
             <sys_updated_by>xxsmack</sys_updated_by>
-            <sys_updated_on>2022-07-25 17:34:14</sys_updated_on>
+            <sys_updated_on>2022-08-03 17:05:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,15 +18,43 @@
             <element>.split</element>
             <position>1</position>
             <sys_created_by>xxsmack</sys_created_by>
-            <sys_created_on>2022-07-25 17:34:14</sys_created_on>
-            <sys_id>09336f93db741150f41dc15b13961982</sys_id>
+            <sys_created_on>2022-08-03 17:05:04</sys_created_on>
+            <sys_id>59d2b51edb451190f41dc15b1396194d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Service Selection" display_value="Service Selection" name="x_aaro2_ace_car_request" sys_domain="global" view="Default view">9c399b97db341150f41dc15b139619fa</sys_ui_section>
             <sys_updated_by>xxsmack</sys_updated_by>
-            <sys_updated_on>2022-07-25 17:34:14</sys_updated_on>
+            <sys_updated_on>2022-08-03 17:05:04</sys_updated_on>
             <sys_user/>
             <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>delivery_option</element>
+            <position>2</position>
+            <sys_created_by>xxsmack</sys_created_by>
+            <sys_created_on>2022-08-03 17:05:04</sys_created_on>
+            <sys_id>5dd2b51edb451190f41dc15b1396194d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Service Selection" display_value="Service Selection" name="x_aaro2_ace_car_request" sys_domain="global" view="Default view">9c399b97db341150f41dc15b139619fa</sys_ui_section>
+            <sys_updated_by>xxsmack</sys_updated_by>
+            <sys_updated_on>2022-08-03 17:05:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>delivery_date</element>
+            <position>3</position>
+            <sys_created_by>xxsmack</sys_created_by>
+            <sys_created_on>2022-08-03 17:05:04</sys_created_on>
+            <sys_id>51d2b51edb451190f41dc15b1396194e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Service Selection" display_value="Service Selection" name="x_aaro2_ace_car_request" sys_domain="global" view="Default view">9c399b97db341150f41dc15b139619fa</sys_ui_section>
+            <sys_updated_by>xxsmack</sys_updated_by>
+            <sys_updated_on>2022-08-03 17:05:04</sys_updated_on>
+            <sys_user/>
+            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Service Selection</caption>
