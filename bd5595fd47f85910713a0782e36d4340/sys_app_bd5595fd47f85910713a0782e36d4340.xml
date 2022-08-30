@@ -22,22 +22,22 @@
         <scoped_administration>false</scoped_administration>
         <short_description>Car sales management</short_description>
         <source>x_aaro2_ace_car</source>
-        <store_correlation_id>REPOAPP0000648999</store_correlation_id>
+        <store_correlation_id>REPOAPP0000649014</store_correlation_id>
         <store_url/>
         <sys_class_name>sys_app</sys_class_name>
         <sys_code/>
         <sys_created_by>xxsmack</sys_created_by>
         <sys_created_on>2022-07-20 15:23:32</sys_created_on>
         <sys_id>bd5595fd47f85910713a0782e36d4340</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_updated_by>xxsmack</sys_updated_by>
-        <sys_updated_on>2022-08-30 18:13:31</sys_updated_on>
+        <sys_updated_on>2022-08-30 18:32:23</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>1.0.0010</version>
+        <version>1.0.0011</version>
     </sys_app>
 </record_update>
